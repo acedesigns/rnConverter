@@ -13,7 +13,7 @@ import {View, StyleSheet, Text} from 'react-native';
 const HomeScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <Text>Main App Screen Pleasse work</Text>
+      <Text>Main App Screen</Text>
     </View>
   );
 };

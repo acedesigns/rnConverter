@@ -11,19 +11,19 @@ import React from 'react';
 import {View, StyleSheet, Text} from 'react-native';
 
 const DetailsScreen = ({navigation}) => {
-    return (
-        <View style={styles.container}>
-            <Text>Details Screen App Screen</Text>
-        </View>
-    );
+  return (
+    <View style={styles.container}>
+      <Text>Currency Converter Screen </Text>
+    </View>
+  );
 };
 
-export default DetailsScreen;
-
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });
+
+export default DetailsScreen;
