@@ -42,7 +42,7 @@ const App = () => {
       setTimeout(() => {
         setIsLoading(false);
       });
-    }, 4000);
+    }, 3000);
   }, []);
 
   if (isLoading) {
