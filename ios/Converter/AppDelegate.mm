@@ -31,7 +31,6 @@ static NSString *const kRNConcurrentRoot = @"concurrentRoot";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  [GMSServices provideAPIKey:@"AIzaSyB7KI0HDGqOcyRfBKrbkmn1UHf4zERYNXY"]
   RCTAppSetupPrepareApp(application);
   
 

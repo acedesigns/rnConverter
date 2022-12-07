@@ -74,7 +74,6 @@ const HomeScreen = ({navigation}) => {
         )}
       />
 
-      {value != null ? <Text> we have a {value}</Text> : ''}
       {value != null && value === 'length' ? <DistanceComp /> : ''}
       {value != null && value === 'weight' ? <WeightComp /> : ''}
     </View>

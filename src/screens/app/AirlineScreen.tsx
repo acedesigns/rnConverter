@@ -21,12 +21,6 @@ const data = [
   {label: 'King Shaka', value: 'DUR'},
 ];
 
-const config = {
-  headers: {
-    'X-RapidAPI-Key': '96d8d96d0dmsh92aec14a72add2ap153e6ajsnd31719630ba4',
-    'X-RapidAPI-Host': 'aerodatabox.p.rapidapi.com',
-  },
-};
 
 const AirlineScreen = () => {
   const [value, setValue] = useState<any>(null);
@@ -46,19 +40,12 @@ const AirlineScreen = () => {
 
   useEffect(() => {
     if (value) {
-      //console.log('request made');
-      //console.log(value);
       axios
-        .get(
-          'https://aerodatabox.p.rapidapi.com/airports/iata/' + value,
-          config,
-        )
+        .get('https://aerodatabox.p.rapidapi.com/airports/iata/' + value)
         .then((response: any) => {
-          //console.log(response.data);
           setAirport(response.data);
         })
         .catch(function (error: Error) {
-          // handle error
           console.log(error);
         });
     }
